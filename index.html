@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Mark H. Ramos | Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Navigation Bar -->
     <header>
         <h1>Andrew <span>Ramos</span></h1>
+
         <nav>
             <a href="#home">Home</a>
             <a href="#about">About Me</a>
@@ -19,23 +21,17 @@
         </nav>
     </header>
 
-    <!-- HOME -->
+    <!-- Home Section -->
     <section id="home" class="home">
         <div class="home-content">
 
-            <img
-                src="./profile.png"
-                alt="Andrew Mark H. Ramos"
-                class="profile-picture"
-                onerror="this.style.display='none'; document.getElementById('profile-error').style.display='block';"
-            >
-
-            <p id="profile-error" class="image-error">
-                Profile picture could not be loaded.
-                Please check that profile.png is in the repository.
-            </p>
+            <!-- Updated profile image path -->
+            <img src="profile.png"
+                 alt="Profile picture of Andrew Mark H. Ramos"
+                 class="profile-picture">
 
             <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
             <h2>Hello, I'm <span>Andrew Mark H. Ramos</span></h2>
             <h3>First-Year BSIT Student</h3>
 
@@ -49,7 +45,7 @@
         </div>
     </section>
 
-    <!-- ABOUT ME -->
+    <!-- About Me Section -->
     <section id="about">
         <h2>About <span>Me</span></h2>
 
@@ -67,149 +63,191 @@
         </p>
 
         <p id="more-text" class="hidden">
-            I enjoy basketball, fitness, and computers. Basketball
-            teaches me teamwork, discipline, and continuous improvement.
-            My goal is to develop useful websites and projects, learn
-            more about technology, and become a skilled IT professional.
+            I enjoy playing basketball, working out, and using
+            computers. Basketball teaches me teamwork, discipline,
+            and the importance of continuous improvement.
+
+            <br><br>
+
+            My goal is to develop my programming skills, create
+            useful websites and projects, and learn more about
+            computer hardware and software. I will continue
+            practicing and working hard to become a better IT student.
         </p>
 
         <button id="read-button" onclick="readMore()">Read More</button>
 
+        <!-- Personal Information -->
         <div class="personal-info">
             <h3>Personal Information</h3>
+
             <button id="info-button" onclick="showInfo()">
                 Show Information
             </button>
 
-            <div id="personal-info" class="hidden info-box">
+            <div id="personal-info" class="hidden">
                 <p><strong>Full Name:</strong> Andrew Mark H. Ramos</p>
                 <p><strong>Age:</strong> 19 years old</p>
                 <p><strong>Course:</strong> BS Information Technology</p>
                 <p><strong>Year Level:</strong> 1st Year</p>
                 <p><strong>Section:</strong> BSIT 21010</p>
                 <p><strong>School:</strong> Bestlink College of the Philippines</p>
-                <p><strong>Education:</strong> 1st Year BSIT</p>
                 <p><strong>Interests:</strong> Basketball, Fitness, Computers</p>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="education">
+            <h3>Education</h3>
+
+            <div class="card">
+                <h4>Bestlink College of the Philippines</h4>
+                <p>Bachelor of Science in Information Technology</p>
+                <p>1st Year | BSIT 21010</p>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- Skills Section -->
     <section id="skills">
         <h2>My <span>Skills</span></h2>
-        <p>These are the technical and personal skills I am developing.</p>
+
+        <p>
+            These are the technical and personal skills
+            I am developing as an IT student.
+        </p>
 
         <div class="card-container">
             <div class="card">
                 <h3>HTML</h3>
-                <p>Creating the structure of web pages.</p>
+                <p>Used to create the structure of web pages.</p>
             </div>
+
             <div class="card">
                 <h3>CSS</h3>
-                <p>Styling websites and organizing layouts.</p>
+                <p>Used to style websites and organize their layout.</p>
             </div>
+
             <div class="card">
                 <h3>JavaScript</h3>
-                <p>Adding interactions to websites.</p>
+                <p>Used to add interaction to websites.</p>
             </div>
+
             <div class="card">
                 <h3>C Programming</h3>
-                <p>Practicing programming logic and problem-solving.</p>
+                <p>Used to practice programming logic and problem-solving.</p>
             </div>
         </div>
 
         <h3 class="subheading">Personal Skills</h3>
+
         <div class="card-container">
             <div class="card">
                 <h3>Teamwork</h3>
-                <p>Working with others toward a shared goal.</p>
+                <p>Working with others to achieve a common goal.</p>
             </div>
+
             <div class="card">
                 <h3>Discipline</h3>
-                <p>Staying focused and consistent with tasks.</p>
+                <p>Staying focused and being consistent with my tasks.</p>
             </div>
+
             <div class="card">
                 <h3>Problem-Solving</h3>
-                <p>Finding solutions to different challenges.</p>
+                <p>Finding solutions to challenges and problems.</p>
             </div>
+
             <div class="card">
                 <h3>Adaptability</h3>
-                <p>Learning new things and adjusting to change.</p>
+                <p>Being willing to learn new things and adjust to changes.</p>
             </div>
         </div>
     </section>
 
-    <!-- PROJECTS AND ACTIVITIES -->
+    <!-- Projects and Activities -->
     <section id="projects">
         <h2>My <span>Projects</span></h2>
-        <p>Here are some activities I completed during my IT studies.</p>
+
+        <p>
+            Here are some of the activities I completed
+            during my Information Technology studies.
+        </p>
 
         <div class="card-container">
 
+            <!-- My Favorite Things -->
             <div class="card project-card">
-                <img
-                    src="./myfavoritethings.jpg"
-                    alt="My Favorite Things project screenshot"
-                    class="project-image"
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-                >
-                <p class="image-error">Image unavailable: myfavoritethings.jpg</p>
+                <img src="myfavoritethings.jpg"
+                     alt="My Favorite Things website screenshot"
+                     class="project-image">
 
                 <h3>My Favorite Things</h3>
-                <p>A website about my favorite things and interests.</p>
-                <a
-                    href="https://dreeew11.github.io/Things-I-Like-the-Most/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="activity-link"
-                >View Activity</a>
+
+                <p>
+                    A website about my favorite things
+                    and personal interests.
+                </p>
+
+                <a href="https://dreeew11.github.io/Things-I-Like-the-Most/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="activity-link">
+                    View Activity
+                </a>
             </div>
 
+            <!-- My Website -->
             <div class="card project-card">
-                <img
-                    src="./mywebsite.jpg"
-                    alt="My Website project screenshot"
-                    class="project-image"
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-                >
-                <p class="image-error">Image unavailable: mywebsite.jpg</p>
+                <img src="mywebsite.jpg"
+                     alt="My Website project screenshot"
+                     class="project-image">
 
                 <h3>My Website</h3>
-                <p>My personal website created using HTML and CSS.</p>
-                <a
-                    href="https://dreeew11.github.io/MyWebsite/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="activity-link"
-                >View Activity</a>
+
+                <p>
+                    My personal website created using HTML and CSS.
+                </p>
+
+                <a href="https://dreeew11.github.io/MyWebsite/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="activity-link">
+                    View Activity
+                </a>
             </div>
 
+            <!-- Teacher's Day -->
             <div class="card project-card">
-                <img
-                    src="./teachersday.jpg"
-                    alt="Teacher's Day project screenshot"
-                    class="project-image"
-                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-                >
-                <p class="image-error">Image unavailable: teachersday.jpg</p>
+                <img src="teachersday.jpg"
+                     alt="Teacher's Day website screenshot"
+                     class="project-image">
 
                 <h3>Teacher's Day</h3>
-                <p>A tribute website for my teacher and basketball coach.</p>
-                <a
-                    href="https://dreeew11.github.io/ACTIVITY-IN-ITE1/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="activity-link"
-                >View Activity</a>
+
+                <p>
+                    A tribute website created to show
+                    appreciation for my teacher and coach.
+                </p>
+
+                <a href="https://dreeew11.github.io/ACTIVITY-IN-ITE1/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="activity-link">
+                    View Activity
+                </a>
             </div>
 
         </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- Contact Section -->
     <section id="contact">
         <h2>Contact <span>Me</span></h2>
-        <p>Thank you for visiting my portfolio.</p>
+
+        <p>
+            Thank you for visiting my portfolio.
+            You can contact me using the information below.
+        </p>
 
         <div class="contact-info">
             <p>
@@ -218,6 +256,7 @@
                     amhramosbcp@gmail.com
                 </a>
             </p>
+
             <p>
                 <strong>Phone:</strong>
                 <a href="tel:09224450423">09224450423</a>
@@ -225,11 +264,12 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Andrew Mark H. Ramos. All Rights Reserved.</p>
         <p>BSIT 21010 | Bestlink College of the Philippines</p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
