@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Mark H. Ramos | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Andrew <span>Ramos</span></h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="home-content">
+
+            <!-- Updated profile image path -->
+            <img src="profile.png"
+                 alt="Profile picture of Andrew Mark H. Ramos"
+                 class="profile-picture">
+
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h2>Hello, I'm <span>Andrew Mark H. Ramos</span></h2>
+            <h3>First-Year BSIT Student</h3>
+
+            <p>
+                Welcome to my personal portfolio! I am an IT student
+                who wants to improve my programming skills and learn
+                more about technology.
+            </p>
+
+            <a href="#about" class="main-button">Learn More About Me</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About <span>Me</span></h2>
+
+        <p>
+            My name is Andrew Mark H. Ramos. I am a first-year
+            Bachelor of Science in Information Technology student
+            at Bestlink College of the Philippines.
+        </p>
+
+        <p>
+            I am a hardworking student who wants to improve my
+            programming skills and learn more about computers
+            and website development. I am currently learning
+            HTML, CSS, JavaScript, and C Programming.
+        </p>
+
+        <p id="more-text" class="hidden">
+            I enjoy playing basketball, working out, and using
+            computers. Basketball teaches me teamwork, discipline,
+            and the importance of continuous improvement.
+
+            <br><br>
+
+            My goal is to develop my programming skills, create
+            useful websites and projects, and learn more about
+            computer hardware and software. I will continue
+            practicing and working hard to become a better IT student.
+        </p>
+
+        <button id="read-button" onclick="readMore()">Read More</button>
+
+        <!-- Personal Information -->
+        <div class="personal-info">
+            <h3>Personal Information</h3>
+
+            <button id="info-button" onclick="showInfo()">
+                Show Information
+            </button>
+
+            <div id="personal-info" class="hidden">
+                <p><strong>Full Name:</strong> Andrew Mark H. Ramos</p>
+                <p><strong>Age:</strong> 19 years old</p>
+                <p><strong>Course:</strong> BS Information Technology</p>
+                <p><strong>Year Level:</strong> 1st Year</p>
+                <p><strong>Section:</strong> BSIT 21010</p>
+                <p><strong>School:</strong> Bestlink College of the Philippines</p>
+                <p><strong>Interests:</strong> Basketball, Fitness, Computers</p>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="education">
+            <h3>Education</h3>
+
+            <div class="card">
+                <h4>Bestlink College of the Philippines</h4>
+                <p>Bachelor of Science in Information Technology</p>
+                <p>1st Year | BSIT 21010</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My <span>Skills</span></h2>
+
+        <p>
+            These are the technical and personal skills
+            I am developing as an IT student.
+        </p>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Used to create the structure of web pages.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Used to style websites and organize their layout.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Used to add interaction to websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>C Programming</h3>
+                <p>Used to practice programming logic and problem-solving.</p>
+            </div>
+        </div>
+
+        <h3 class="subheading">Personal Skills</h3>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Teamwork</h3>
+                <p>Working with others to achieve a common goal.</p>
+            </div>
+
+            <div class="card">
+                <h3>Discipline</h3>
+                <p>Staying focused and being consistent with my tasks.</p>
+            </div>
+
+            <div class="card">
+                <h3>Problem-Solving</h3>
+                <p>Finding solutions to challenges and problems.</p>
+            </div>
+
+            <div class="card">
+                <h3>Adaptability</h3>
+                <p>Being willing to learn new things and adjust to changes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects and Activities -->
+    <section id="projects">
+        <h2>My <span>Projects</span></h2>
+
+        <p>
+            Here are some of the activities I completed
+            during my Information Technology studies.
+        </p>
+
+        <div class="card-container">
+
+            <!-- My Favorite Things -->
+            <div class="card project-card">
+                <img src="myfavoritethings.jpg"
+                     alt="My Favorite Things website screenshot"
+                     class="project-image">
+
+                <h3>My Favorite Things</h3>
+
+                <p>
+                    A website about my favorite things
+                    and personal interests.
+                </p>
+
+                <a href="https://dreeew11.github.io/Things-I-Like-the-Most/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="activity-link">
+                    View Activity
+                </a>
+            </div>
+
+            <!-- My Website -->
+            <div class="card project-card">
+                <img src="mywebsite.jpg"
+                     alt="My Website project screenshot"
+                     class="project-image">
+
+                <h3>My Website</h3>
+
+                <p>
+                    My personal website created using HTML and CSS.
+                </p>
+
+                <a href="https://dreeew11.github.io/MyWebsite/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="activity-link">
+                    View Activity
+                </a>
+            </div>
+
+            <!-- Teacher's Day -->
+            <div class="card project-card">
+                <img src="teachersday.jpg"
+                     alt="Teacher's Day website screenshot"
+                     class="project-image">
+
+                <h3>Teacher's Day</h3>
+
+                <p>
+                    A tribute website created to show
+                    appreciation for my teacher and coach.
+                </p>
+
+                <a href="https://dreeew11.github.io/ACTIVITY-IN-ITE1/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="activity-link">
+                    View Activity
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact <span>Me</span></h2>
+
+        <p>
+            Thank you for visiting my portfolio.
+            You can contact me using the information below.
+        </p>
+
+        <div class="contact-info">
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:amhramosbcp@gmail.com">
+                    amhramosbcp@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                <a href="tel:09224450423">09224450423</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Andrew Mark H. Ramos. All Rights Reserved.</p>
+        <p>BSIT 21010 | Bestlink College of the Philippines</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
